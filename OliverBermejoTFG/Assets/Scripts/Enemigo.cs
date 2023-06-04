@@ -11,7 +11,7 @@ public class Enemigo : MonoBehaviour
     public GameObject jugador;
     public Jugador jugadorScript;
     public bool dmgListo = false;
-    //public GameObject particulaEnemigoMuerte;
+    public HealthBar barraVida;
 
     // Start is called before the first frame update
     void Start()
@@ -21,6 +21,7 @@ public class Enemigo : MonoBehaviour
         jugadorScript = jugador.GetComponent<Jugador>();
         controlador = controladorGeneral.GetComponent<Controlador>();
         vidaRata = controlador.devolverVidaEnemigo();
+        barraVida.SetMaxHealth(20);
         velocidadRata = controlador.devolverVelocidadEnemigos();
         dmgListo = true;
     }
@@ -39,6 +40,7 @@ public class Enemigo : MonoBehaviour
     public void restarVida(int daño)
     {
         vidaRata -= daño;
+        barraVida.SetHealth(vidaRata);
     }
 
     void comprobarVida()
@@ -72,9 +74,7 @@ public class Enemigo : MonoBehaviour
 
     void enemigoMuerte()
     {
-        //Instantiate(particulaEnemigoMuerte, transform.position, Quaternion.identity);
-        //yield return new WaitForSeconds(0.5f);
-        controlador.enemigoEliminado(1);
+        controlador.enemigoEliminado();
         Destroy(gameObject);
     }
 }

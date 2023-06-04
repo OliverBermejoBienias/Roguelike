@@ -126,6 +126,8 @@ MonoBehaviour:
   numeroRandom: 0
   jugador: {fileID: 0}
   jugadorScript: {fileID: 0}
+  controladorGeneral: {fileID: 0}
+  controladorScript: {fileID: 0}
 --- !u!135 &8375738056323487054
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -137,8 +139,8 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 1.1126645
-  m_Center: {x: -0.0000004768372, y: -2.5410988e-21, z: -0.00000017881399}
+  m_Radius: 2
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &5235395401905509004
 PrefabInstance:
   m_ObjectHideFlags: 0

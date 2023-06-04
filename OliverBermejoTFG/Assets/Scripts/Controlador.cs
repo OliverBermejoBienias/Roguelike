@@ -18,16 +18,7 @@ public class Controlador : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        intervaloDisparo = 1f;
-        dmgProyectil = 30;
-        roboVida = 0;
-        totalEnemigos = 10;
-        tiempoSpawnEnemigos = 2.0f;
-        vidaEnemigos = 20;
-        velocidadEnemigos = 2.5f;
-        dmgEnemigo = 15;
-        enemigosEliminados = 0;
-        salasCompletadas = 0;
+        valoresIniciales();
     }
 
     private void Update()
@@ -72,9 +63,23 @@ public class Controlador : MonoBehaviour
         }
     }
 
-    public void enemigoEliminado(int numero)
+    public void valoresIniciales()
     {
-        enemigosEliminados += numero;
+        intervaloDisparo = 1.2f;
+        dmgProyectil = 10;
+        roboVida = 0;
+        totalEnemigos = 10;
+        tiempoSpawnEnemigos = 2.0f;
+        vidaEnemigos = 20;
+        velocidadEnemigos = 2.5f;
+        dmgEnemigo = 15;
+        enemigosEliminados = 0;
+        salasCompletadas = 0;
+    }
+
+    public void enemigoEliminado()
+    {
+        enemigosEliminados += 1;
     }
 
     public void resertearEnemigosEliminados()
@@ -100,6 +105,11 @@ public class Controlador : MonoBehaviour
     public int devolverDmgProyectil()
     {
         return dmgProyectil;
+    }
+
+    public void actualizarDmgProyectil(int num)
+    {
+        dmgProyectil += num;
     }
 
     public void salaCompletada(int numero)

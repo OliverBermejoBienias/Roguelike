@@ -28,8 +28,8 @@ public class PowerUps : MonoBehaviour
         // Verificar la probabilidad para determinar el rango del número aleatorio
         if (probabilidad <= 0.95f)
         {
-            // Generar un número aleatorio entre 1 y 4
-            return Random.Range(1, 5);
+            // Generar un número aleatorio entre 1 y 5
+            return Random.Range(1, 6);
         }
         else
         {
@@ -43,7 +43,7 @@ public class PowerUps : MonoBehaviour
         {
             case 1:
                 //VELOCIDAD MOVIMIENTO
-                jugadorScript.playerSpeed += 0.2f;
+                jugadorScript.actualizarVelocidadJugador(0.3f);
                 break; 
             case 2:
                 //DISPAROS CADA MENOS TIEMPO
@@ -58,6 +58,10 @@ public class PowerUps : MonoBehaviour
                 controladorScript.actualizarRoboVida(1);
                 break;
             case 5:
+                //DAÑO DE PROYECTIL
+                controladorScript.actualizarDmgProyectil(1);
+                break;
+            case 6:
                 //ESCUDO DE 2s DE INMUNIDAD
 
                 break;
