@@ -1,0 +1,359 @@
+fileFormatVersion: 2
+guid: 0d10f5c16443feb4fa597207645c3678
+timeCreated: 1528965160
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 21
+  fileIDToRecycleName:
+    100000: Bip001
+    100002: Bip001 Footsteps
+    100004: Bip001 Head
+    100006: Bip001 HeadNub
+    100008: Bip001 L Calf
+    100010: Bip001 L Clavicle
+    100012: Bip001 L Finger0
+    100014: Bip001 L Finger01
+    100016: Bip001 L Finger02
+    100018: Bip001 L Finger0Nub
+    100020: Bip001 L Finger1
+    100022: Bip001 L Finger11
+    100024: Bip001 L Finger12
+    100026: Bip001 L Finger1Nub
+    100028: Bip001 L Finger2
+    100030: Bip001 L Finger21
+    100032: Bip001 L Finger22
+    100034: Bip001 L Finger2Nub
+    100036: Bip001 L Finger3
+    100038: Bip001 L Finger31
+    100040: Bip001 L Finger32
+    100042: Bip001 L Finger3Nub
+    100044: Bip001 L Foot
+    100046: Bip001 L Forearm
+    100048: Bip001 L Hand
+    100050: Bip001 L Thigh
+    100052: Bip001 L Toe0
+    100054: Bip001 L Toe01
+    100056: Bip001 L Toe02
+    100058: Bip001 L Toe0Nub
+    100060: Bip001 L UpperArm
+    100062: Bip001 Neck
+    100064: Bip001 Pelvis
+    100066: Bip001 R Calf
+    100068: Bip001 R Clavicle
+    100070: Bip001 R Finger0
+    100072: Bip001 R Finger01
+    100074: Bip001 R Finger02
+    100076: Bip001 R Finger0Nub
+    100078: Bip001 R Finger1
+    100080: Bip001 R Finger11
+    100082: Bip001 R Finger12
+    100084: Bip001 R Finger1Nub
+    100086: Bip001 R Finger2
+    100088: Bip001 R Finger21
+    100090: Bip001 R Finger22
+    100092: Bip001 R Finger2Nub
+    100094: Bip001 R Finger3
+    100096: Bip001 R Finger31
+    100098: Bip001 R Finger32
+    100100: Bip001 R Finger3Nub
+    100102: Bip001 R Foot
+    100104: Bip001 R Forearm
+    100106: Bip001 R Hand
+    100108: Bip001 R Thigh
+    100110: Bip001 R Toe0
+    100112: Bip001 R Toe01
+    100114: Bip001 R Toe02
+    100116: Bip001 R Toe0Nub
+    100118: Bip001 R UpperArm
+    100120: Bip001 Spine
+    100122: Bip001 Spine1
+    100124: Bip001 Xtra01
+    100126: Bip001 Xtra0102
+    100128: Bip001 Xtra01Nub
+    100130: Bip001 Xtra02
+    100132: Bip001 Xtra0202
+    100134: Bip001 Xtra02Nub
+    100136: Bone_Finger002
+    100138: Bone_Finger003
+    100140: Bone_Finger01
+    100142: Bone_ForeArm
+    100144: Bone_Hand
+    100146: Bone_UpArm
+    100148: Brazo
+    100150: Casco
+    100152: Compuerta
+    100154: Diente
+    100156: Diente2
+    100158: Escape02
+    100160: Escape1
+    100162: Joystick
+    100164: Motor
+    100166: Ojo
+    100168: polySurface002
+    100170: //RootNode
+    100172: Rueda1
+    100174: Rueda2
+    100176: Rueda3
+    100178: Rueda4
+    100180: SILLA
+    100182: Silla
+    400000: Bip001
+    400002: Bip001 Footsteps
+    400004: Bip001 Head
+    400006: Bip001 HeadNub
+    400008: Bip001 L Calf
+    400010: Bip001 L Clavicle
+    400012: Bip001 L Finger0
+    400014: Bip001 L Finger01
+    400016: Bip001 L Finger02
+    400018: Bip001 L Finger0Nub
+    400020: Bip001 L Finger1
+    400022: Bip001 L Finger11
+    400024: Bip001 L Finger12
+    400026: Bip001 L Finger1Nub
+    400028: Bip001 L Finger2
+    400030: Bip001 L Finger21
+    400032: Bip001 L Finger22
+    400034: Bip001 L Finger2Nub
+    400036: Bip001 L Finger3
+    400038: Bip001 L Finger31
+    400040: Bip001 L Finger32
+    400042: Bip001 L Finger3Nub
+    400044: Bip001 L Foot
+    400046: Bip001 L Forearm
+    400048: Bip001 L Hand
+    400050: Bip001 L Thigh
+    400052: Bip001 L Toe0
+    400054: Bip001 L Toe01
+    400056: Bip001 L Toe02
+    400058: Bip001 L Toe0Nub
+    400060: Bip001 L UpperArm
+    400062: Bip001 Neck
+    400064: Bip001 Pelvis
+    400066: Bip001 R Calf
+    400068: Bip001 R Clavicle
+    400070: Bip001 R Finger0
+    400072: Bip001 R Finger01
+    400074: Bip001 R Finger02
+    400076: Bip001 R Finger0Nub
+    400078: Bip001 R Finger1
+    400080: Bip001 R Finger11
+    400082: Bip001 R Finger12
+    400084: Bip001 R Finger1Nub
+    400086: Bip001 R Finger2
+    400088: Bip001 R Finger21
+    400090: Bip001 R Finger22
+    400092: Bip001 R Finger2Nub
+    400094: Bip001 R Finger3
+    400096: Bip001 R Finger31
+    400098: Bip001 R Finger32
+    400100: Bip001 R Finger3Nub
+    400102: Bip001 R Foot
+    400104: Bip001 R Forearm
+    400106: Bip001 R Hand
+    400108: Bip001 R Thigh
+    400110: Bip001 R Toe0
+    400112: Bip001 R Toe01
+    400114: Bip001 R Toe02
+    400116: Bip001 R Toe0Nub
+    400118: Bip001 R UpperArm
+    400120: Bip001 Spine
+    400122: Bip001 Spine1
+    400124: Bip001 Xtra01
+    400126: Bip001 Xtra0102
+    400128: Bip001 Xtra01Nub
+    400130: Bip001 Xtra02
+    400132: Bip001 Xtra0202
+    400134: Bip001 Xtra02Nub
+    400136: Bone_Finger002
+    400138: Bone_Finger003
+    400140: Bone_Finger01
+    400142: Bone_ForeArm
+    400144: Bone_Hand
+    400146: Bone_UpArm
+    400148: Brazo
+    400150: Casco
+    400152: Compuerta
+    400154: Diente
+    400156: Diente2
+    400158: Escape02
+    400160: Escape1
+    400162: Joystick
+    400164: Motor
+    400166: Ojo
+    400168: polySurface002
+    400170: //RootNode
+    400172: Rueda1
+    400174: Rueda2
+    400176: Rueda3
+    400178: Rueda4
+    400180: SILLA
+    400182: Silla
+    2300000: Bone_Finger002
+    2300002: Bone_Finger003
+    2300004: Bone_Finger01
+    2300006: Bone_ForeArm
+    2300008: Bone_Hand
+    2300010: Bone_UpArm
+    2300012: Compuerta
+    2300014: Escape02
+    2300016: Escape1
+    2300018: Joystick
+    2300020: Motor
+    2300022: Rueda1
+    2300024: Rueda2
+    2300026: Rueda3
+    2300028: Rueda4
+    2300030: SILLA
+    3300000: Bone_Finger002
+    3300002: Bone_Finger003
+    3300004: Bone_Finger01
+    3300006: Bone_ForeArm
+    3300008: Bone_Hand
+    3300010: Bone_UpArm
+    3300012: Compuerta
+    3300014: Escape02
+    3300016: Escape1
+    3300018: Joystick
+    3300020: Motor
+    3300022: Rueda1
+    3300024: Rueda2
+    3300026: Rueda3
+    3300028: Rueda4
+    3300030: SILLA
+    4300000: polySurface002
+    4300002: Brazo
+    4300004: Casco
+    4300006: Ojo
+    4300008: Silla
+    4300010: SILLA
+    4300012: Rueda3
+    4300014: Rueda2
+    4300016: Rueda1
+    4300018: Rueda4
+    4300020: Compuerta
+    4300022: Joystick
+    4300024: Escape1
+    4300026: Escape02
+    4300028: Motor
+    4300030: Bone_UpArm
+    4300032: Bone_ForeArm
+    4300034: Bone_Hand
+    4300036: Bone_Finger002
+    4300038: Bone_Finger003
+    4300040: Bone_Finger01
+    4300042: Diente
+    4300044: Diente2
+    7400000: Dash_final
+    9500000: //RootNode
+    13700000: Brazo
+    13700002: Casco
+    13700004: Diente
+    13700006: Diente2
+    13700008: Ojo
+    13700010: polySurface002
+    13700012: Silla
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Dash_final
+      takeName: Take 001
+      firstFrame: 160
+      lastFrame: 215
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 1
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: SILLA
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: e42e94ad62cf89e4fa44c88a899b28cd,
+    type: 3}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
