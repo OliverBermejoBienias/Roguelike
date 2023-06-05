@@ -10,6 +10,7 @@ public class Controlador : MonoBehaviour
     public int dmgEnemigo;
     public int dmgEnemigoRestado;
     public int salasCompletadas;
+    public static bool juegoCompl;
     public float tiempoSpawnEnemigos;
     public int vidaEnemigos;
     public float velocidadEnemigos;
@@ -69,6 +70,15 @@ public class Controlador : MonoBehaviour
                 vidaEnemigos = 38;
                 dmgEnemigo = 23 - dmgEnemigoRestado;
                 break;
+            case 7:
+                totalEnemigos = 33;
+                tiempoSpawnEnemigos = 0.0f;
+                vidaEnemigos = 40;
+                dmgEnemigo = 25 - dmgEnemigoRestado;
+                break;
+            case 8:
+                StartCoroutine(juegoCompletado());
+                break;
         }
     }
 
@@ -86,6 +96,7 @@ public class Controlador : MonoBehaviour
         enemigosEliminados = 0;
         salasCompletadas = 0;
         escudoAdquirido = false;
+        juegoCompl = false;
     }
 
     public void enemigoEliminado()
@@ -186,5 +197,21 @@ public class Controlador : MonoBehaviour
     public bool devolverEscudoAdquirido()
     {
         return escudoAdquirido;
+    }
+
+    public int devolverSalasCompletadas()
+    {
+        return salasCompletadas;
+    }
+
+    IEnumerator juegoCompletado()
+    {
+        yield return new WaitForSeconds(5.0f);
+        juegoCompl = true;
+    }
+
+    public bool devolverJuegoCompletado()
+    {
+        return juegoCompl;
     }
 }

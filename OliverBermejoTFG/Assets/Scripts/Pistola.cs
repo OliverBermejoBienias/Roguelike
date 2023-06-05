@@ -82,6 +82,8 @@ public class Pistola : MonoBehaviour
             return false;
         }
     }
+
+    //Rota la torreta hacia el enemigo más cercano
     private void RotateTurret()
     {
         Vector3 direction = objetivo.position - transform.position;
