@@ -24,6 +24,10 @@ public class PowerUps : MonoBehaviour
         controladorPowerUp = controladorScript.GetComponent<MenuPowerUp>();
         escudoAdquirido = controladorScript.devolverEscudoAdquirido();
     }
+    private void Update()
+    {
+        escudoAdquirido = controladorScript.devolverEscudoAdquirido();
+    }
 
     private int generarNumeroRandom()
     {
@@ -40,7 +44,7 @@ public class PowerUps : MonoBehaviour
             }
             else
             {
-                return 5;
+                return 6;
             }
         }
         else
