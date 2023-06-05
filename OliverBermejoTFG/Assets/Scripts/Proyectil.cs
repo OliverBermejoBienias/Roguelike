@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Proyectil : MonoBehaviour
 {
-    private float velocidad = 15f;
+    private float velocidad = 20f;
     public GameObject particulasAgua;
 
     // Update is called once per frame

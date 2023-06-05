@@ -18,6 +18,7 @@ TagManager:
   - controlador
   - spawn
   - pistola
+  - enemigo
   layers:
   - Default
   - TransparentFX
@@ -25,9 +26,9 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
-  - 
+  - Player
+  - Mapa
+  - Enemigos
   - 
   - whatIsGround
   - 

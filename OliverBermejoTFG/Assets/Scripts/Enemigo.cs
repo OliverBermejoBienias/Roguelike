@@ -21,7 +21,7 @@ public class Enemigo : MonoBehaviour
         jugadorScript = jugador.GetComponent<Jugador>();
         controlador = controladorGeneral.GetComponent<Controlador>();
         vidaRata = controlador.devolverVidaEnemigo();
-        barraVida.SetMaxHealth(20);
+        barraVida.inicializeMaxHealth(controlador.devolverVidaEnemigo());
         velocidadRata = controlador.devolverVelocidadEnemigos();
         dmgListo = true;
     }
@@ -30,11 +30,6 @@ public class Enemigo : MonoBehaviour
     void Update()
     {
         comprobarVida();
-
-        if (!dmgListo)
-        {
-            StartCoroutine(recargarEnfriamientoDmg());
-        }
     }
 
     public void restarVida(int daño)
@@ -58,18 +53,6 @@ public class Enemigo : MonoBehaviour
             restarVida(controlador.devolverDmgProyectil());
             jugadorScript.actualizarVida(controlador.devolverRoboVida());
         }
-        if (other.CompareTag("player") && dmgListo)
-        {
-            Jugador jugadorScript = other.GetComponent<Jugador>();
-            jugadorScript.recibirDmg(controlador.devolverDmgEnemigo());
-            dmgListo = false;
-        }
-    }
-
-    IEnumerator recargarEnfriamientoDmg()
-    {
-        yield return new WaitForSeconds(1.0f);
-        dmgListo = true;
     }
 
     void enemigoMuerte()

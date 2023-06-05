@@ -51,8 +51,8 @@ public class SpawnEnemigos : MonoBehaviour
                 animatorPuertas.SetBool("abrir", true);
                 controlador.resertearEnemigosEliminados();
                 Instantiate(particulaSalaCompletada, transform.position, Quaternion.identity);
-                Instantiate(powerUp, powerUpSpawn.position, powerUpSpawn.rotation);
             }
+            Instantiate(powerUp, powerUpSpawn.position, powerUpSpawn.rotation);
             controlador.salaCompletada(1);
             Destroy(this.gameObject);
         }

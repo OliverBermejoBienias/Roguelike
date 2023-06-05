@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 1256497001085567980}
   - component: {fileID: 1256497001085567982}
   - component: {fileID: 1256497001085567983}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Bone_Principal
-  m_TagString: Untagged
+  m_TagString: enemigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -99,7 +99,7 @@ GameObject:
   - component: {fileID: 1256497001105366759}
   - component: {fileID: 1256497001105366753}
   - component: {fileID: 1256497001105366758}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Bone_Ruedas_Del
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -182,7 +182,7 @@ GameObject:
   - component: {fileID: 1256497001128326884}
   - component: {fileID: 1256497001128326886}
   - component: {fileID: 1256497001128326887}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Bone_Ruedas_Tras
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -265,7 +265,7 @@ GameObject:
   - component: {fileID: 1256497001185620624}
   - component: {fileID: 1256497001185620626}
   - component: {fileID: 1256497001185620627}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Bone_Cola
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -347,9 +347,11 @@ GameObject:
   m_Component:
   - component: {fileID: 1256497001331582700}
   - component: {fileID: 1256497001331582703}
-  m_Layer: 12
+  - component: {fileID: 487310770222023823}
+  - component: {fileID: 4551013470756427533}
+  m_Layer: 0
   m_Name: Rata
-  m_TagString: Untagged
+  m_TagString: enemigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -429,6 +431,36 @@ SkinnedMeshRenderer:
     m_Center: {x: 0, y: 0.20971002, z: 0.07609975}
     m_Extent: {x: 0.19967692, y: 0.6222014, z: 0.28229052}
   m_DirtyAABB: 0
+--- !u!65 &487310770222023823
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1256497001331582701}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.4500812, y: 0.97628975, z: 0.37251925}
+  m_Center: {x: -0.007288774, y: -0.083343744, z: 0.18818186}
+--- !u!114 &4551013470756427533
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1256497001331582701}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92546b16b8f9b4b4e8b51b871698c4cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dmgListo: 0
+  controladorGeneral: {fileID: 0}
+  controlador: {fileID: 0}
+  jugador: {fileID: 0}
+  jugadorScript: {fileID: 0}
 --- !u!1 &1256497001336151473
 GameObject:
   m_ObjectHideFlags: 0
@@ -440,7 +472,7 @@ GameObject:
   - component: {fileID: 1256497001336151472}
   - component: {fileID: 1256497001336151474}
   - component: {fileID: 1256497001336151475}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Sphere (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -523,7 +555,7 @@ GameObject:
   - component: {fileID: 1256497001961116696}
   - component: {fileID: 1256497001961116698}
   - component: {fileID: 1256497001961116699}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Sphere (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -605,7 +637,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1256497002062326873}
   - component: {fileID: 1256497002062326872}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Spotlight (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -700,7 +732,7 @@ GameObject:
   - component: {fileID: 1256497002085575709}
   - component: {fileID: 1256497002085575711}
   - component: {fileID: 1256497002085575708}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Bone_Cuerda
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -783,7 +815,7 @@ GameObject:
   - component: {fileID: 1256497002914519527}
   - component: {fileID: 1256497002914519521}
   - component: {fileID: 1256497002914519526}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Bone_Cabeza
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -869,7 +901,9 @@ GameObject:
   - component: {fileID: 1256497002965378438}
   - component: {fileID: 1256497002965378439}
   - component: {fileID: 1924003316281260659}
-  m_Layer: 12
+  - component: {fileID: 1010853019906316597}
+  - component: {fileID: 8847269948999337698}
+  m_Layer: 0
   m_Name: Rata_Patrullar
   m_TagString: rata
   m_Icon: {fileID: 0}
@@ -926,8 +960,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.28153718, y: 0.6712229, z: 0.6601218}
-  m_Center: {x: 0.0116938455, y: 0.36990058, z: -0.062173188}
+  m_Size: {x: 0.28920346, y: 0.25714523, z: 0.26793298}
+  m_Center: {x: 0.0037461221, y: 0.20567983, z: -0.074392915}
 --- !u!114 &1924003316281260659
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -948,6 +982,44 @@ MonoBehaviour:
   jugadorScript: {fileID: 0}
   dmgListo: 0
   barraVida: {fileID: 4319885898822735513}
+--- !u!195 &1010853019906316597
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1256497002965378437}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.1
+  m_Speed: 5.3
+  m_Acceleration: 10
+  avoidancePriority: 50
+  m_AngularSpeed: 1500
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 0.58
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
+--- !u!114 &8847269948999337698
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1256497002965378437}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a8779803391fd045baa01736beb93d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  jugador: {fileID: 0}
+  controladorGeneral: {fileID: 0}
+  controladorScript: {fileID: 0}
+  agent: {fileID: 1010853019906316597}
 --- !u!1001 &8256274155986676941
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -955,6 +1027,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1256497002965378433}
     m_Modifications:
+    - target: {fileID: 485219676947551860, guid: bb483bffdfd22bf4d93e8cae9f178406, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2148395497069979381, guid: bb483bffdfd22bf4d93e8cae9f178406, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4615773934137711551, guid: bb483bffdfd22bf4d93e8cae9f178406, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -966,6 +1046,18 @@ PrefabInstance:
     - target: {fileID: 6033349585343691351, guid: bb483bffdfd22bf4d93e8cae9f178406, type: 3}
       propertyPath: m_Name
       value: CanvasEnemigo
+      objectReference: {fileID: 0}
+    - target: {fileID: 6033349585343691351, guid: bb483bffdfd22bf4d93e8cae9f178406, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6259190251592437074, guid: bb483bffdfd22bf4d93e8cae9f178406, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7923366130051449747, guid: bb483bffdfd22bf4d93e8cae9f178406, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8033645818526456079, guid: bb483bffdfd22bf4d93e8cae9f178406, type: 3}
       propertyPath: m_Color.b

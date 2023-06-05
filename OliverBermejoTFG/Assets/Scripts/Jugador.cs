@@ -11,11 +11,15 @@ public class Jugador : MonoBehaviour
     public static Animator animatorJugador;
     public int moviendo = 1;
     public int ratasEliminadas;
-    public int vidaMaxima = 100;
+    public int vidaMaxima;
     public int vida = 100;
     public GameObject[] chispas;
     public HealthBar barraVida;
     public bool muerto;
+    public GameObject escudoUI;
+    public GameObject escudo;
+    public bool escudoListo;
+    public bool inmune;
 
     public float playerSpeed;
     public float rotationSpeed;
@@ -26,9 +30,14 @@ public class Jugador : MonoBehaviour
         player = GetComponent<CharacterController>();
         animatorJugador = GetComponent<Animator>();
         ratasEliminadas = 0;
-        barraVida.SetMaxHealth(vidaMaxima);
+        vidaMaxima = 100;
         muerto = false;
+        inmune = false;
+        escudoListo = false;
+        escudo.SetActive(false);
+        escudoUI.SetActive(false);
         playerSpeed = 2.6f;
+        barraVida.inicializeMaxHealth(vidaMaxima);
         for (int i = 0; i < chispas.Length; i++)
         {
             chispas[i].SetActive(false);
@@ -67,17 +76,30 @@ public class Jugador : MonoBehaviour
 
     public void recibirDmg(int dmg)
     {
-        vida = vida - dmg;
-        barraVida.SetHealth(vida);
+        if (!inmune)
+        {
+            vida = vida - dmg;
+            barraVida.SetHealth(vida);
+            if (escudoListo)
+            {
+                StartCoroutine(escudoActivo());
+            }
+        }
     }
 
     public void actualizarVida(int num)
     {
-        if (vida < 100)
+        if (vida < vidaMaxima)
         {
             vida += num;
             barraVida.SetHealth(vida);
         }
+    }
+
+    public void actualizarVidaMaxima(int num)
+    {
+        vidaMaxima += num;
+        barraVida.SetMaxHealth(vidaMaxima);
     }
 
     public void actualizarVelocidadJugador(float num)
@@ -96,5 +118,28 @@ public class Jugador : MonoBehaviour
     {
         yield return new WaitForSeconds(1.5f);
         GameOver.fin = true;
+    }
+
+    IEnumerator escudoActivo()
+    {
+        escudo.SetActive(true);
+        inmune = true;
+        yield return new WaitForSeconds(3f);
+        inmune = false;
+        StartCoroutine(escudoEnfriamiento());
+    }
+
+    IEnumerator escudoEnfriamiento()
+    {
+        escudoListo = false;
+        escudo.SetActive(false);
+        yield return new WaitForSeconds(7f);
+        escudoListo = true;
+    }
+
+    public void escudoConseguido()
+    {
+        escudoListo = true;
+        escudoUI.SetActive(true);
     }
 }

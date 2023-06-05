@@ -10,6 +10,7 @@ public class PowerUps : MonoBehaviour
     public Jugador jugadorScript;
     public GameObject controladorGeneral;
     public Controlador controladorScript;
+    public bool escudoAdquirido;
 
     private void Start()
     {
@@ -18,22 +19,30 @@ public class PowerUps : MonoBehaviour
         controladorGeneral = GameObject.FindGameObjectWithTag("controlador");
         jugadorScript = jugador.GetComponent<Jugador>();
         controladorScript = controladorGeneral.GetComponent<Controlador>();
+        escudoAdquirido = controladorScript.devolverEscudoAdquirido();
     }
 
     private int generarNumeroRandom()
     {
-        // Generar un número aleatorio entre 0 y 1
-        float probabilidad = Random.Range(0f, 1f);
-
-        // Verificar la probabilidad para determinar el rango del número aleatorio
-        if (probabilidad <= 0.95f)
+        if (!escudoAdquirido)
         {
-            // Generar un número aleatorio entre 1 y 5
-            return Random.Range(1, 6);
+            // Generar un número aleatorio entre 0 y 1
+            float probabilidad = Random.Range(0f, 1f);
+
+            // Verificar la probabilidad para determinar el rango del número aleatorio
+            if (probabilidad <= 0.95f)
+            {
+                // Generar un número aleatorio entre 1 y 5
+                return Random.Range(1, 6);
+            }
+            else
+            {
+                return 5;
+            }
         }
         else
         {
-            return 5;
+            return Random.Range(1, 6);
         }
     }
 
@@ -42,16 +51,16 @@ public class PowerUps : MonoBehaviour
         switch (numeroPowerUp)
         {
             case 1:
-                //VELOCIDAD MOVIMIENTO
-                jugadorScript.actualizarVelocidadJugador(0.3f);
+                //AUMENTAR VIDA MAXIMA DEL JUGADOR
+                jugadorScript.actualizarVidaMaxima(10);
                 break; 
             case 2:
                 //DISPAROS CADA MENOS TIEMPO
-                controladorScript.actualizarIntervaloDisparo(0.15f);
+                controladorScript.actualizarIntervaloDisparo(0.2f);
                 break;
             case 3:
-                //ENEMIGOS MAS LENTOS
-                controladorScript.actualizarVelocidadEnemigos(-0.2f);
+                //MENOR DAÑO DE ENEMIGOS
+                controladorScript.actualizarDmgEnemigo(3);
                 break;
             case 4:
                 //ROBO DE VIDA
@@ -63,7 +72,8 @@ public class PowerUps : MonoBehaviour
                 break;
             case 6:
                 //ESCUDO DE 2s DE INMUNIDAD
-
+                controladorScript.actualizarEscudoAdquirido();
+                jugadorScript.escudoConseguido();
                 break;
         }
     }

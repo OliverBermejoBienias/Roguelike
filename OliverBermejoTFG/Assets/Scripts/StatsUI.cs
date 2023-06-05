@@ -10,9 +10,9 @@ public class StatsUI : MonoBehaviour
     public GameObject jugador;
     public Jugador jugadorScript;
     public Controlador controladorScript;
-    public TextMeshProUGUI movSpeed;
+    public TextMeshProUGUI vidaMaxima;
     public TextMeshProUGUI atkSpeed;
-    public TextMeshProUGUI enemySpeed;
+    public TextMeshProUGUI enemyDmg;
     public TextMeshProUGUI lifeSteal;
     public TextMeshProUGUI atkDmg;
 
@@ -27,9 +27,9 @@ public class StatsUI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        movSpeed.text = jugadorScript.playerSpeed.ToString();
+        vidaMaxima.text = jugadorScript.vidaMaxima.ToString();
         atkSpeed.text = controladorScript.devolverIntervaloDisparo().ToString();
-        enemySpeed.text = controladorScript.devolverVelocidadEnemigos().ToString();
+        enemyDmg.text = controladorScript.devolverDmgEnemigo().ToString();
         lifeSteal.text = controladorScript.devolverRoboVida().ToString();
         atkDmg.text = controladorScript.devolverDmgProyectil().ToString();
     }
